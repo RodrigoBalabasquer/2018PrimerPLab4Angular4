@@ -1,0 +1,23 @@
+<div class="CajaInicio animated bounceInRight">
+  <!--header> <h1>Mostrar Persona </h1> </header-->      
+ <form id="FormIngreso">
+    <div class="form-group">
+
+    <label for="sabor">Nombre</label>
+    <input class="form-control" type="text" name="sabor" id="sabor" value = {{unaPersona.nombre}} disabled/>
+    <span id="lblSabor" style="display:none;color:#FF0000;width:1%;float:right;font-size:80">*</span>
+    
+    <label for="tipo">Email</label>
+    <input class="form-control" type="text" name="tipo" id="tipo" value = {{unaPersona.email}} disabled/> 
+    <span id="lblTipo" style="display:none;color:#FF0000;width:1%;float:right;font-size:80">*</span>
+    
+    <label for="cantidad">Sexo</label>
+    <input class="form-control" type="text" name="cantidad" id="cantidad" value = {{unaPersona.sexo}} disabled/> 
+    <span id="lblCantidad" style="display:none;color:#FF0000;width:1%;float:right;font-size:80">*</span>            
+
+    <img  style="width: 100px;height: 100px" src="../../../assets/{{unaPersona.foto}}" class="fotoform"/>
+
+    <button class="btn btn-danger" (click)="Borrar(unaPersona.id)">Borrar</button>
+    </div>	
+  </form>	
+</div>	
